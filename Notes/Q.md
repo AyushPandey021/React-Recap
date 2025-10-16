@@ -18,3 +18,5 @@ Real DOM vs Virtual DOM
 
     => what is JSX ?
     HTML + Javascript, its allow to write html code inside javascript 
+
+components same structure same but data diffrent so is called props drilling
