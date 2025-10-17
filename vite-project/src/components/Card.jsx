@@ -77,6 +77,16 @@ const JobCardsRow = () => {
       logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
       saved: true,
     },
+    {
+      company: "LIC",
+      title: "Account Manager",
+      salary: "$70–120k",
+      location: "Indore, India",
+      type1: "Full-Time",
+      type2: "Remote",
+      logo: "https://imgs.search.brave.com/Jjz3ofGZBmCf7S9Bjk47HuYVT3MIfT2LDrZAco0TOHY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/bG9nb3NoYXBlLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8wOS9saWMtbG9n/by12ZWN0b3JfbG9n/b3NoYXBlLmNvbV8u/cG5n",
+      saved: true,
+    },
 
   ];
 
