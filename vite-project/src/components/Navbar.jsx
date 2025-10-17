@@ -4,17 +4,14 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white  top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-blue-600">MyLogo</h1>
+        <h1 className="  p-3 px-8 bg-black    rounded-full text-white uppercase ">Target audience</h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
-          <li><a href="#" className="hover:text-blue-600">Home</a></li>
-          <li><a href="#" className="hover:text-blue-600">About</a></li>
-          <li><a href="#" className="hover:text-blue-600">Services</a></li>
-          <li><a href="#" className="hover:text-blue-600">Contact</a></li>
+  <h1 className="  p-3 px-8 bg-gray-200    rounded-full text-black uppercase ">dogital banking paltfrom </h1>
         </ul>
 
         {/* Mobile Menu Button */}

@@ -7,8 +7,7 @@ const App = () => {
   return (
     <div>
       <Navbar/>
-
-    
+      <Home/>    
       <Card/>
       
     </div>
