@@ -20,3 +20,21 @@ Real DOM vs Virtual DOM
     HTML + Javascript, its allow to write html code inside javascript 
 
 components same structure same but data diffrent so is called props drilling
+event handle by funtion in button 
+frist you create one button => and create one funtional funtion => and write logic inside funtion => in button add events onClick and add funtion
+like that ➡️
+import React from 'react'
+
+const App = () => {
+ const  btnClick=()=>{
+    alert("Button Clicked")
+  }
+  return (
+    <div>
+      <h1>Hello, Ayush</h1>
+<button onClick={btnClick }>Click to Change</button>
+    </div>
+  )
+}
+
+export default App

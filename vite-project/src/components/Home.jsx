@@ -39,7 +39,7 @@ const Home = () => {
         </h1>
       </div>
 
-   
+   {/* right */}
       <div className="w-2/3 flex gap-6 overflow-x-auto no-scrollbar">
         {cards.map((card, index) => (
           <div>
