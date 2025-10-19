@@ -1,5 +1,6 @@
 import React from 'react'
 import Input  from './Input'
+import Page from './Pages'
 
 const App = () => {
  const  btnClick=()=>{
@@ -16,6 +17,7 @@ const App = () => {
 <button onClick={btnClick }>Click to Change</button>
 <button onClick={clicktoRed}>Click to Red </button>
   <Input/>
+  <Page/>
     </div>
   
      )
