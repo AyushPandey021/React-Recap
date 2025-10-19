@@ -24,7 +24,7 @@ components same structure same but data diffrent so is called props drilling
 event handle by funtion in button
 frist you create one button => and create one funtional funtion => and write logic inside funtion => in button add events onClick and add funtion
 like that ➡️
-import React from 'react'
+<!-- import React from 'react'
 
 const App = () => {
 const btnClick=()=>{
@@ -36,7 +36,7 @@ return (
 <button onClick={btnClick }>Click to Change</button>
 </div>
 )
-}
+} -->
 
 export default App
 
