@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Change from "./Change";
+import Binding from "./Binding";
 
 const App = () => {
   // Usestate hook with pratical
@@ -41,6 +42,7 @@ const App = () => {
       <button onClick={increment}>Increment</button>
       <button onClick={Jumbtan}>Jumb by 10 </button>
         <Change/>
+        <Binding/>
     </>
   
   );

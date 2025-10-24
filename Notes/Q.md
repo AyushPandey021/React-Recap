@@ -58,3 +58,5 @@ for changeing element
 🎯useCallback,useMemo=> worked on optimization. its manage the rerenders stops and manage. manage the data optimization.
 ➡️optimazation ke liye unnecessay re-renders avoid karne ke liye.
 
+
+2 way binding ✅
