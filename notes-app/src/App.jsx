@@ -74,7 +74,7 @@ const App = () => {
             task.map((elem, idx) => (
               <div
                 key={idx}
-                className="relative bg-gray-100 rounded-2xl p-5 w-64 flex flex-col justify-between border border-gray-200 shadow-lg hover:shadow-green-400/40 transition duration-300"
+                className="relative bg-gray-500 rounded-2xl p-5 w-64 flex flex-col justify-between border border-gray-200 shadow-lg hover:shadow-green-400/40 transition duration-300"
               >
                
                
@@ -84,7 +84,7 @@ const App = () => {
                     {elem.title}
                   </h3>
                   <hr className="text-green-500" />
-                  <p className="text-gray-700 mt-5 text-sm leading-snug line-clamp-4 first-letter:uppercase">
+                  <p className="text-gray-300 mt-5 text-sm leading-snug line-clamp-4 first-letter:uppercase">
                     {elem.detailed}
                   </p>
                 </div>
