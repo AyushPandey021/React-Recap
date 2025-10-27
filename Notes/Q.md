@@ -60,3 +60,17 @@ for changeing element
 
 
 2 way binding ✅
+
+3. What is localstorage ? 
+=>local storage stores the data in  browser side on a  local machine its built in storage its not remove after closeing the browser, its only manually removed.se
+
+4. what is Session storage ?
+=>Session Storage is a browser storage that stores data temporarily for a single session.
+The data is deleted automatically when the browser tab is closed.
+
+
+5. what is Session storage vs localstorage ?
+=>The main difference between localStorage and sessionStorage is that
+localStorage keeps data even after closing the browser,while sessionStorage removes the data as soon as the browser tab is closed.
+
+API management and Colling
