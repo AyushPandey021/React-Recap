@@ -74,3 +74,7 @@ The data is deleted automatically when the browser tab is closed.
 localStorage keeps data even after closing the browser,while sessionStorage removes the data as soon as the browser tab is closed.
 
 API management and Colling
+
+
+useeffect 🎯
+// useEffect is a react hook it use to perfrom work in side effect after the component  rendering , useEffect useing for fatching the

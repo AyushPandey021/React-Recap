@@ -1,27 +1,26 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import Ap from './Ap'
+
 const App = () => {
-const getData=async ()=>{
-  const [data, setData] = useState([])
-  const responce = await axios.get('https://picsum.photos/v2/list')
-   
-   setData(responce.data)
-    
-  
-}
+  const [one , setOne ] =useState(0)
   return (
+    <div>
+<h1>
+Count:
+<button onClick={()=>{
+  setOne(one+1)
+}}>Click</button>
+ 
+<button onClick={()=>{
+  if(one>0)
+  setOne(one-1)
+}}>Click</button>
+ 
+<h2>{one}</h2>
+<Ap name="OM" course="Full stack developement" Cname="ITRediant"  />
+</h1>
 
-    <div> 
-
-
-      <button onClick={getData}>Get Data </button>
-
-      <div className="">
-        {data.map(function(elem,idx){
-          return <h3>hello {idx}</h3>
-        })}
-      </div>
-     </div>
+    </div>
   )
 }
 

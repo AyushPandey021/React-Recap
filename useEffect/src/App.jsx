@@ -13,7 +13,7 @@ useEffect(function(){
 
 
 
-// useEffect is a react hook it use to perfrom work in side effect after the component  rendering , useEffect useing for fatching the data event listen
+// useEffect is a react hook it use to perfrom work in side effect after the component  rendering , useEffect useing for fatching the data, event listen
   const [a, setA] = useState(0)
   const [b,setB] = useState(0)
 
