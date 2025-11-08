@@ -1,63 +1,66 @@
 import React, { useEffect, useState } from 'react'
-import API from "./API"
 
 const App = () => {
-   const [num, setNum]=  useState(0)
-   const [num2, setNum2]=  useState(0)
-  useState(100)
-  // useEffect chalega jab bhi component render hoga
-useEffect(function(){
-  console.log("Use Effect Is Running...");
-  
-},[])
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users");
+        if (!res.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await res.json();
+        setUsers(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
 
+    fetchUsers();
+  }, []);
 
-// useEffect is a react hook it use to perfrom work in side effect after the component  rendering , useEffect useing for fatching the data, event listen
-  const [a, setA] = useState(0)
-  const [b,setB] = useState(0)
+  // 🌟 Conditional Rendering
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen text-2xl text-blue-500">
+        Loading...
+      </div>
+    );
+  }
 
-function aChanging(){
-  console.log("A ki Value  Change ho gyi");
-  
-}
-function bChanging(){
-  console.log("B ki Vlaue Change ho gyi");
-  
+  if (error) {
+    return (
+      <div className="flex items-center justify-center h-screen text-2xl text-red-500">
+        Error: {error}
+      </div>
+    );
+  }
 
-}
-useEffect(function(){
-  console.log("Use Effect is Runing");
-  
-},[a])
   return (
-  <div>
-      <h1>Count: {num}</h1>
-      <h1>num2 {num2}</h1>
-      <button onMouseEnter={()=>{
-        setNum(num+1)
-
-      }}
-      onMouseLeave={()=>{
-        setNum2(num2 + 10 )
-      }}>
-        Hover
-      </button>
-      <API/>
-<div className="">
-  <h1>A is {a}</h1>
-  <h1>B is {b}</h1>
-  
-<button onClick={()=>{
-  setA(a+1)
-}}>Change A</button>
-<button onClick={()=>{
-  setB(b-1)
-}}>Change B</button>
-</div>
-
+    <div className="flex flex-col items-center min-h-screen bg-gray-100 py-10">
+      <h1 className="text-3xl font-bold mb-6 text-gray-700">User List</h1>
+      <ul className="bg-white shadow-lg rounded-2xl p-6 w-96 space-y-3">
+        {users.map((user) => (
+          <li
+            key={user.id}
+            className="border-b last:border-none py-2 text-gray-700 hover:bg-gray-50 transition-all"
+          >
+            <strong>{user.name}</strong> <br />
+            <span className="text-sm text-gray-500">{user.email}</span>
+          </li>
+        ))}
+      </ul>
     </div>
-  )
+  );
 }
+
+
+
+
 
 export default App
